@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+body {
+    color: #fff;
+    background: #222224;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+header {
+    margin-bottom: 40px;
+}
+
+footer {
+    font-size: 13px;
+}
+
+a {
+    color: #9bc2cf;
+}
+
+a:hover {
+    color: #9bc2cf;
+}
+
+#title {
+    font-size: 55px;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* #config-area */
+
+.config {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.config-name {
+    display: block;
+    font-size: 18px;
+}
+
+.config input {
+    width: 30px;
+    margin-top: 10px;
+    background: none;
+    border-style: none none solid none;
+}
+
+#config-area {
+    margin-bottom: 45px;
+}
+
+#config-boxes {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 3px;
+    max-width: 320px;
+}
+
+#start-button {
+    font-size: 12px;
+    padding: 2px 8px;
+    border-radius: 3px;
+}
+
+/* #clock */
+
+#clock {
+    margin: 0 auto 45px;
+}
+
+#timer-type {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+#timer {
+    font-size: 50px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+#pause-resume-button, #stop-button {
+    font-size: 11px;
+    padding: 2px 5px;
+    border-radius: 3px;
+    
+}
+
+/* Media Query */
+
+@media (min-width: 768px) {
+    header {
+        margin-bottom: 45px;
+    }
+
+    #title {
+        font-size: 75px;
+    }
+    
+    /* #config-area */
+
+    .config {
+        font-size: 20px;
+        margin-bottom: 0;
+    }
+    
+    .config-name {
+        font-size: 25px;
+    }
+
+    .config input {
+        width: 50px;
+    }
+
+    #config-boxes {
+        max-width: 430px;
+        margin-bottom: 30px;
+    }
+    
+    #start-button {
+        font-size: 17px;
+        padding: 3px 14px;
+        border-radius: 4px;
+    }
+    
+    /* #clock */
+    
+    #timer-type {
+        font-size: 25px;
+        margin-bottom: -5px;
+    }
+
+    #timer {
+        font-size: 70px;
+    }
+
+    #pause-resume-button, #stop-button {
+        font-size: 13px;
+    }
+}

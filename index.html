@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Pomodoro Clock</title>
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+    <body>
+        <audio id="beep-sound" src="http://res.cloudinary.com/aazibch/video/upload/v1510846295/246332__kwahmah-02__five-beeps_tq9vpw.mp3"></audio>
+        <div class="container">
+            <header>
+                <h1 id="title" class="text-center">Pomodoro Clock</h1>
+            </header>
+            
+            <section id="config-area">
+                <div id="config-boxes">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div id="pomodoro-config" class="config text-center">
+                                <span class="config-name">Pomodoro Length</span>
+                                <input id="pomodoro-length" class="text-center" type="text" value="25" maxlength="3">
+                                <span class="unit text-uppercase">Min</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div id="break-config" class="config text-center">
+                                <span class="config-name">Break Length</span>
+                                <input id="break-length" class="text-center" type="text" value="5" maxlength="3">
+                                <span class="unit text-uppercase">Min</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="start-button-container" class="text-center">
+                    <button id="start-button" class="button btn btn-default" type="button">Start</button>
+                </div>
+            </section>
+    
+            <section id="clock" class="text-center hidden">
+                <span id="timer-type">Pomodoro</span>
+                <span id="timer">25:00</span>
+                <button id="pause-resume-button" class="button btn btn-default" type="button">Pause</button>
+                <button id="stop-button" class="button btn btn-default" type="button">Stop</button>
+            </section>
+            
+            <footer class="text-center">
+                <p>By Aazb Chaudhry.</p>
+                <p class="small">
+                    <a href="https://freesound.org/people/kwahmah_02/sounds/246332/" target="_blank">Audio content</a>
+                    is from kwahmah_02 under
+                    <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank">Creative Commons Attribution License</a>.
+                </p>
+            </footer>
+        </div>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
